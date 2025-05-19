@@ -313,7 +313,7 @@ func (a *amqpConnection) healthy() bool {
 // registerConsumer opens a new consumerChannel and registers the MessageConsumer.
 func (a *amqpConnection) registerConsumer(consumer MessageConsumer) error {
 	for _, channel := range a.channels {
-		if channel.consumer != nil && channel.consumer.Queue == consumer.Queue {
+		if channel.consumer != nil && channel.consumer.Name == consumer.Name && channel.consumer.Queue == consumer.Queue {
 			err := errConsumerAlreadyExists
 
 			a.logger.Error(err, "Could not register consumer", logField{Key: "consumer", Value: consumer.Name})
