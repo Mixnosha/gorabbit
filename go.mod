@@ -1,4 +1,4 @@
-module github.com/KardinalAI/gorabbit
+module github.com/Mixnosha/gorabbit
 
 go 1.21
 

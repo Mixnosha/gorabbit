@@ -3,7 +3,7 @@ package gorabbit_test
 import (
 	"testing"
 
-	"github.com/KardinalAI/gorabbit"
+	"github.com/Mixnosha/gorabbit"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
